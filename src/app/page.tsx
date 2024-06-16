@@ -5,7 +5,7 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
+import { Teams } from "@/components/Teams/page";
 import Testimonials from "@/components/Testimonials";
 import { ThreeDCardDemo } from "@/components/3dCard/page";
 import Video from "@/components/Video";
@@ -26,7 +26,7 @@ export default function Home() {
       <AboutSectionOne />
       <ThreeDCardDemo />
       <Testimonials />
-      <Pricing />
+      <Teams />
       <Blog />
       <Contact />
     </>
