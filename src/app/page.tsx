@@ -7,6 +7,7 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
+import { ThreeDCardDemo } from "@/components/3dCard/page";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 
@@ -23,7 +24,7 @@ export default function Home() {
       <Features />
       <Video />
       <AboutSectionOne />
-      <AboutSectionTwo />
+      <ThreeDCardDemo />
       <Testimonials />
       <Pricing />
       <Blog />
