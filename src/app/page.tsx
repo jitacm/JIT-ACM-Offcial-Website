@@ -1,14 +1,14 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Blog from "@/components/Blog";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import { Teams } from "@/components/Teams/page";
+// import { Teams } from "@/components/Teams/page";
 import Testimonials from "@/components/Testimonials";
-import { ThreeDCardDemo } from "@/components/3dCard/page";
+// import { ThreeDCardDemo } from "@/components/3dCard/page";
 import Video from "@/components/Video";
+import Teams2 from "@/components/TeamsScroll/page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,9 +24,10 @@ export default function Home() {
       <Features />
       <Video />
       <AboutSectionOne />
-      <ThreeDCardDemo />
+      {/* <ThreeDCardDemo /> */} {/*Teams removed by suraj*/}
+      <Teams2 /> {/*Teams added by suraj*/}
       <Testimonials />
-      <Teams />
+      {/* <Teams /> */} {/*Teams removed by suraj*/}
       <Blog />
       <Contact />
     </>
