@@ -3,7 +3,7 @@ import TeamSection from "./TeamSection";
 
 export default function Teams2() {
   return (
-    <div>
+    <div id="teams">
       <Head>
         <title>Our Team</title>
         <link rel="icon" href="/favicon.ico" />
