@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
-
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/Team";
 
 export function Teams() {
   return (
     <>
-      <div className="mx-auto grid w-full grid-cols-4 items-center justify-center gap-3 bg-white px-8 py-20 dark:bg-black lg:flex-row">
+      <div className="mx-auto my-8 grid w-full gap-3 bg-white px-8 py-20 dark:bg-black sm:grid-cols-2 lg:grid-cols-4">
         <Card title="Bhavesh Shukare" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -24,7 +23,6 @@ export function Teams() {
             ]}
             dotSize={2}
           />
-          {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 bg-black/50 [mask-image:radial-gradient(400px_at_center,white,transparent)] dark:bg-black/90" />
         </Card>
         <Card title="Rohan Nishad" icon={<AceternityIcon />}>
@@ -60,7 +58,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="group/canvas-card relative mx-auto flex h-[30rem] w-full  max-w-sm items-center justify-center border border-black/[0.2] p-4 dark:border-white/[0.2]"
+      className="group/canvas-card relative mx-auto my-8 flex h-[30rem] w-full max-w-sm items-center justify-center border border-black/[0.2] p-4 dark:border-white/[0.2] md:h-[20rem]"
     >
       <Icon className="absolute -left-3 -top-3 h-6 w-6 text-black dark:text-white" />
       <Icon className="absolute -bottom-3 -left-3 h-6 w-6 text-black dark:text-white" />
@@ -80,10 +78,10 @@ const Card = ({
       </AnimatePresence>
 
       <div className="relative z-20">
-        <div className="mx-auto flex w-full items-center justify-center text-center  transition duration-200 group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0">
+        <div className="mx-auto flex w-full items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0">
           {icon}
         </div>
-        <h2 className="relative z-10 mt-4 text-xl font-bold text-black opacity-0 transition  duration-200 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white group-hover/canvas-card:opacity-100 dark:text-white">
+        <h2 className="relative z-10 mt-4 text-xl font-bold text-black opacity-0 transition duration-200 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white group-hover/canvas-card:opacity-100 dark:text-white">
           {title}
         </h2>
       </div>
