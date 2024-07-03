@@ -8,6 +8,7 @@ import { Teams } from "@/components/Teams/page";
 import Testimonials from "@/components/Testimonials";
 import { ThreeDCardDemo } from "@/components/3dCard/page";
 import Video from "@/components/Video";
+import Teams2 from "@/components/TeamsScroll/page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function Home() {
       <Video />
       <AboutSectionOne />
       <ThreeDCardDemo />
+      <Teams2 />
       <Testimonials />
       <Teams />
       <Blog />
