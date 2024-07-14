@@ -3,16 +3,16 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "First Hackathon by ACM Student Chapter JIT",
+    title: "Mastering GitHub: Enhancing Your Workflow",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-01.jpg",
+      "GitHub is an essential tool for developers, allowing collaborative work on projects and simplifying complex workflows.",
+    image: "/images/blog/git.jpg",
     author: {
-      name: "Samuyl Joshi",
-      image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      name: "Ayush Jagdhane",
+      image: "/images/aacm member/ayush.jpg",
+      designation: "VICE-CHAIR @JIT ACM",
     },
-    tags: ["creative"],
+    tags: ["GITHUB"],
     publishDate: "2025",
   },
   {

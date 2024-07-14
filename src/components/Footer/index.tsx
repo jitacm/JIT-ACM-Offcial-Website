@@ -29,6 +29,9 @@ const Footer = () => {
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                 Jhulelal Institute of Technology, KH. NO. 68 & 72, Village Lonara, Off, Koradi Rd, Nagpur, Maharashtra 441111 
                 </p>
+                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                created by Ayush jagdhane,suraj hemnani, rohan nishad
+                </p>
                 <div className="flex items-center">
                   <a
                     href="/"
