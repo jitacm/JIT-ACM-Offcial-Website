@@ -14,8 +14,8 @@ const TeamMember = ({ name, role, image, link }) => {
           <h3 className="mb-2 text-lg font-bold">{name}</h3>
           <p className="mb-2 text-gray-200">{role}</p>
           <p className="text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            imperdiet bibendum.
+           JIT ACM Student Chapter Team 2024-25
+            
           </p>
         </div>
       </Link>

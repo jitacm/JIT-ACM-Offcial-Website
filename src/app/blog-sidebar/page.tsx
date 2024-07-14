@@ -19,8 +19,7 @@ const BlogSidebarPage = () => {
             <div className="w-full px-4 lg:w-8/12">
               <div>
                 <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
-                  10 amazing sites to download stock photos & digital assets for
-                  free
+                Mastering GitHub: Enhancing Your Workflow
                 </h1>
                 <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
                   <div className="flex flex-wrap items-center">
@@ -36,7 +35,7 @@ const BlogSidebarPage = () => {
                       </div>
                       <div className="w-full">
                         <span className="mb-1 text-base font-medium text-body-color">
-                          By <span> Musharof Chy</span>
+                          By <span>Ayush Jagdhane</span>
                         </span>
                       </div>
                     </div>

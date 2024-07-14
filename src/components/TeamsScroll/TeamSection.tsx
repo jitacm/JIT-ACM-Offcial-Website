@@ -7,105 +7,105 @@ const teamMembers = [
     name: "John Doe",
     role: "CEO",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/1.png",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "Jane Smith",
-    role: "CTO",
+    name: "Bhavesh Sukare ",
+    role: "Chair",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/2.png",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "Mike Johnson",
-    role: "Lead Developer",
+    name: "Ayush Jagdhane ",
+    role: "Vice Chair",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/ayush.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "John Doe",
-    role: "CEO",
+    name: "Rohan Nishad ",
+    role: "Treasurer",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/rohan.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "Jane Smith",
-    role: "CTO",
+    name: "Anjali Ranglani",
+    role: "Secretary",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/anjali.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "Mike Johnson",
-    role: "Lead Developer",
+    name: "Suraj Hemnani",
+    role: "Webmaster",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/suraj.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "John Doe",
-    role: "CEO",
+    name: "Sanskruti Kokde",
+    role: " Membership Chair",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/sanskruti.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "Jane Smith",
-    role: "CTO",
+    name: "Dhruv Thakur",
+    role: "Event Manager ",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/dhruv.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "Mike Johnson",
-    role: "Lead Developer",
+    name: "Lukesh Kamwani",
+    role: "Outreach Coordinator",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/lukesh.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "John Doe",
-    role: "CEO",
+    name: "Pranay Lohakare",
+    role: "Junior Event Manager",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/pranay.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "Jane Smith",
-    role: "CTO",
+    name: "Piyush Dodke",
+    role: "Technical Head",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/piyush.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "Mike Johnson",
-    role: "Lead Developer",
+    name: "Tina Wankhede",
+    role: "Social Media Head",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/tina.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "John Doe",
-    role: "CEO",
+    name: "Tejaswini Punikar",
+    role: "Junior Outreach Coordinator",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/tejaswini.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "Jane Smith",
-    role: "CTO",
+    name: "Walay Shelke",
+    role: " Lead Designer",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/waley.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
   {
-    name: "Mike Johnson",
-    role: "Lead Developer",
+    name: "Shlok Wankhede",
+    role: " Documentation Incharge",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "images/aacm member/shlok.jpg",
     link: "https://www.linkedin.com/in/suraj-hemnani-b4623a251/",
   },
 ];
