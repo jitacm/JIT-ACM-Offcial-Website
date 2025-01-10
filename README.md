@@ -1,1 +1,1 @@
-# JIT-ACM-Offcial-Website
+jit acm student chapter website
