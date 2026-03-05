@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { Code2 } from 'lucide-react';
 
 const Navbar = () => {
@@ -14,11 +14,11 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const menuVariants = {
+  const menuVariants: Variants = {
     closed: {
       clipPath: 'circle(0% at calc(100% - 3rem) 3rem)',
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 400,
         damping: 40
       }
@@ -26,7 +26,7 @@ const Navbar = () => {
     open: {
       clipPath: 'circle(150% at calc(100% - 3rem) 3rem)',
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 400,
         damping: 40
       }

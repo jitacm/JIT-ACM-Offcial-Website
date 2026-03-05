@@ -1,15 +1,30 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import AnnouncementSlider from './AnnouncementSlider';
+import { GridScan } from '@/components/GridScan';
 
 const Hero3D = () => {
   return (
     <div className="relative min-h-screen bg-black overflow-hidden flex flex-col">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-radial from-blue-500/20 via-transparent to-transparent opacity-50" />
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-20" />
+        <div className="absolute inset-0 opacity-55">
+          <GridScan
+            enableWebcam={false}
+            showPreview={false}
+            className="h-full w-full"
+            linesColor="#2d3b57"
+            scanColor="#38bdf8"
+            scanOpacity={0.22}
+            lineThickness={1}
+            gridScale={0.12}
+            noiseIntensity={0.004}
+            scanGlow={0.45}
+            scanSoftness={2.5}
+            scanDuration={2.8}
+            scanDelay={1.4}
+          />
+        </div>
       </div>
 
       <div className="relative z-10 flex-grow flex items-center justify-center">
@@ -56,13 +71,15 @@ const Hero3D = () => {
               <Github className="mr-2 h-5 w-5" />
               Star on GitHub
             </a>
-            <Link
-              to="https://forms.gle/9LDmwzGmnMNW8vCY8"
+            <a
+              href="https://forms.gle/9LDmwzGmnMNW8vCY8"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white rounded-full text-lg font-medium hover:bg-white/10 transition-all hover:scale-105"
             >
               Join Our Community
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            </a>
           </motion.div>
         </div>
       </div>

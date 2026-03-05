@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
@@ -46,14 +45,14 @@ const Gallery = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative group overflow-hidden rounded-xl"
             >
-              <div className="aspect-w-16 aspect-h-9">
+              <div className="aspect-video">
                 <img
                   src={image.url}
                   alt={image.title}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <h3 className="text-white text-lg font-semibold">{image.title}</h3>
                 </div>

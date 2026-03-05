@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 import { User, Mail, Phone, Users, School, Code, ArrowRight } from 'lucide-react';
 
 const EventRegistration = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
+  const router = useRouter();
+  const id = typeof router.query.id === 'string' ? router.query.id : 'annual-hackathon-2024';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,7 +23,7 @@ const EventRegistration = () => {
     // Handle form submission
     console.log(formData);
     // Navigate to ticket page
-    navigate(`/event/${id}/ticket`);
+    router.push(`/EventTicket?id=${id}`);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -46,10 +46,11 @@ const EventRegistration = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-4">
               <div className="relative">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
                 <div className="relative">
                   <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                   <input
+                    id="name"
                     type="text"
                     name="name"
                     value={formData.name}
@@ -61,10 +62,11 @@ const EventRegistration = () => {
               </div>
 
               <div className="relative">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
                 <div className="relative">
                   <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                   <input
+                    id="email"
                     type="email"
                     name="email"
                     value={formData.email}
@@ -76,10 +78,11 @@ const EventRegistration = () => {
               </div>
 
               <div className="relative">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
                 <div className="relative">
                   <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                   <input
+                    id="phone"
                     type="tel"
                     name="phone"
                     value={formData.phone}
@@ -92,10 +95,11 @@ const EventRegistration = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">College</label>
+                  <label htmlFor="college" className="block text-sm font-medium text-gray-700 mb-1">College</label>
                   <div className="relative">
                     <School className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                     <input
+                      id="college"
                       type="text"
                       name="college"
                       value={formData.college}
@@ -107,8 +111,9 @@ const EventRegistration = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Year</label>
+                  <label htmlFor="year" className="block text-sm font-medium text-gray-700 mb-1">Year</label>
                   <select
+                    id="year"
                     name="year"
                     value={formData.year}
                     onChange={handleChange}
@@ -126,10 +131,11 @@ const EventRegistration = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Team Name</label>
+                  <label htmlFor="teamName" className="block text-sm font-medium text-gray-700 mb-1">Team Name</label>
                   <div className="relative">
                     <Users className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                     <input
+                      id="teamName"
                       type="text"
                       name="teamName"
                       value={formData.teamName}
@@ -141,8 +147,9 @@ const EventRegistration = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Team Size</label>
+                  <label htmlFor="teamSize" className="block text-sm font-medium text-gray-700 mb-1">Team Size</label>
                   <select
+                    id="teamSize"
                     name="teamSize"
                     value={formData.teamSize}
                     onChange={handleChange}
