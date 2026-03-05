@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="https://via.placeholder.com/150?text=JIT-ACM+Logo" alt="JIT-ACM Logo" width="120" height="auto" />
+	<img src="./public/images/jitacm-logo-wht.png" alt="JIT-ACM Logo" width="120" height="auto" />
 
 	<h1>JIT ACM Official Website</h1>
 
@@ -25,7 +25,7 @@
 <br />
 
 <div align="center">
-	<img src="https://via.placeholder.com/1000x500?text=JIT-ACM+Website+Preview" alt="Project Screenshot" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+	<img src="./public/images/Website.png" alt="Project Screenshot" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 </div>
 
 ---
@@ -39,7 +39,7 @@ The project is currently built as a Next.js frontend application with reusable c
 | Layer | Technology | Description |
 | :--- | :--- | :--- |
 | **Web App** | [Next.js](https://nextjs.org/) + [React](https://react.dev/) | Page-based routing and component-driven UI architecture. |
-| **Styling** | [Tailwind CSS](https://tailwindcss.com/) + custom CSS | Utility-first styling with custom visual sections and typography. |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) + custom CSS + [Shadcn](https://ui.shadcn.com/) | Utility-first styling with custom visual sections and typography. |
 | **Animation & 3D** | [Framer Motion](https://www.framer.com/motion/), [GSAP](https://gsap.com/), [Three.js](https://threejs.org/) | Interactive effects, transitions, and 3D visual experiences. |
 | **Tooling** | ESLint + TypeScript | Code quality and type-safe development workflow. |
 
