@@ -1,107 +1,160 @@
-# JIT ACM Official Website
+<div align="center">
+	<img src="https://via.placeholder.com/150?text=JIT-ACM+Logo" alt="JIT-ACM Logo" width="120" height="auto" />
 
-Official website for the JIT ACM Student Chapter, built with React, Next.js, TypeScript, Tailwind CSS, and modern animation/3D libraries.
+	<h1>JIT ACM Official Website</h1>
 
-## Overview
+	<p>
+		<strong>The official website of the JIT ACM Student Chapter.</strong>
+	</p>
 
-This project powers the chapter website experience, including:
+	<p>
+		<a href="#getting-started"><strong>Get Started</strong></a> ·
+		<a href="#system-architecture"><strong>Architecture</strong></a> ·
+		<a href="https://github.com/Walayhs/JIT-ACM-Offcial-Website"><strong>Repository</strong></a>
+	</p>
 
-- Animated landing page and hero section
-- About, gallery, events, sponsors, testimonials, team, and contact sections
-- Event flow pages (details, registration, and ticket generation)
-- Blog listing and blog detail page support
+	<p>
+		<img src="https://img.shields.io/badge/Framework-Next.js_16-000000?logo=next.js&logoColor=white" alt="Next.js" />
+		<img src="https://img.shields.io/badge/UI-React_19-61DAFB?logo=react&logoColor=black" alt="React" />
+		<img src="https://img.shields.io/badge/Language-TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
+		<img src="https://img.shields.io/badge/Styling-Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+		<img src="https://img.shields.io/badge/Package_Manager-npm-CB3837?logo=npm&logoColor=white" alt="npm" />
+	</p>
+</div>
 
-The application uses a Next.js page-based structure under `src/pages` and reusable UI sections under `src/components`.
+<br />
 
-## Tech Stack
+<div align="center">
+	<img src="https://via.placeholder.com/1000x500?text=JIT-ACM+Website+Preview" alt="Project Screenshot" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</div>
 
-- Framework: Next.js 16
-- UI: React 19 + TypeScript
-- Styling: Tailwind CSS + PostCSS
-- Animation: Framer Motion, GSAP
-- 3D/visual: Three.js, React Three Fiber, Drei, Spline
-- Utilities: `qrcode.react`, `html2canvas`, `lucide-react`
-- Linting: ESLint
+---
+
+## Project Overview
+
+The JIT-ACM website is a modern, animation-rich chapter platform designed to present events, team activities, blogs, sponsors, and chapter highlights in a clean and interactive user experience.
+
+The project is currently built as a Next.js frontend application with reusable components and route-level pages.
+
+| Layer | Technology | Description |
+| :--- | :--- | :--- |
+| **Web App** | [Next.js](https://nextjs.org/) + [React](https://react.dev/) | Page-based routing and component-driven UI architecture. |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) + custom CSS | Utility-first styling with custom visual sections and typography. |
+| **Animation & 3D** | [Framer Motion](https://www.framer.com/motion/), [GSAP](https://gsap.com/), [Three.js](https://threejs.org/) | Interactive effects, transitions, and 3D visual experiences. |
+| **Tooling** | ESLint + TypeScript | Code quality and type-safe development workflow. |
+
+---
+
+## System Architecture
+
+This repository is a single web application codebase with route components under `src/pages` and reusable sections under `src/components`.
+
+### Directory Structure
+
+```text
+JIT-ACM-Offcial-Website/
+|- public/                    # Static assets (images, event media, sponsors)
+|  |- eventP/
+|  |- images/
+|  |- Sponsor/
+|- src/
+|  |- components/             # Reusable UI sections (Hero, Navbar, Events, etc.)
+|  |- lib/                    # Utility helpers
+|  |- pages/                  # Route-level pages
+|  |- styles/                 # Font and custom stylesheet files
+|  |- types/                  # Type declarations
+|  |- App.tsx                 # Main homepage composition
+|  |- index.css               # Global styles
+|  |- main.tsx                # Legacy Vite entry file
+|- next.config.js             # Next.js configuration
+|- vite.config.ts             # Legacy Vite configuration kept in repo
+|- tailwind.config.js         # Tailwind configuration
+|- postcss.config.js          # PostCSS configuration
+|- eslint.config.js           # ESLint configuration
+```
+
+### Key Architectural Patterns
+
+- **Component-Driven Sections (`src/components`)**: Homepage and feature sections are split into focused reusable components.
+- **Route-Level Screens (`src/pages`)**: Event and blog flows are represented as independent pages for direct navigation.
+- **Animation-First UX**: Motion and transition libraries are integrated across sections for a high-engagement UI.
+- **Hybrid Migration State**: The active scripts run Next.js, while Vite files are retained from an earlier setup.
+
+---
+
+## Prerequisites
+
+Ensure the following tools are installed:
+
+- **Node.js**: v20 or higher (v22 recommended)
+- **npm**: v10 or higher
+
+---
 
 ## Getting Started
 
-### Prerequisites
+### 1. Clone the Repository
 
-- Node.js 20+
-- npm 10+
+```bash
+git clone https://github.com/Walayhs/JIT-ACM-Offcial-Website.git
+cd JIT-ACM-Offcial-Website
+```
 
-### Installation
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Run in Development
+### 3. Run Development Server
 
 ```bash
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open `http://localhost:3000` in your browser.
 
-### Production Build
+---
+
+## Development Workflow
+
+Use these commands during development:
 
 ```bash
+# Start local development server
+npm run dev
+
+# Build production bundle
 npm run build
+
+# Run production server locally
 npm run start
-```
 
-### Lint
-
-```bash
+# Run lint checks
 npm run lint
 ```
 
-## Available Scripts
+### Main Routes
 
-- `npm run dev`: Start Next.js in development mode
-- `npm run build`: Build production assets
-- `npm run start`: Start production server
-- `npm run lint`: Run ESLint checks
+- `/` - Home page
+- `/EventDetails?id=<event-id>` - Event details
+- `/EventRegistration?id=<event-id>` - Event registration form
+- `/EventTicket?id=<event-id>` - Ticket generation view
+- `/BlogPage?id=<blog-id>` - Blog detail page
 
-## Project Structure
+---
 
-```text
-.
-|- public/                  # Static assets (images, event media, sponsors)
-|- src/
-|  |- components/           # Reusable sections and UI building blocks
-|  |- pages/                # Next.js pages/routes
-|  |- styles/               # Fonts and additional styles
-|  |- types/                # Type declarations
-|  |- App.tsx               # Main composed homepage content
-|  |- index.css             # Global styles
-|- next.config.js           # Next.js configuration
-|- tailwind.config.js       # Tailwind config
-|- postcss.config.js        # PostCSS config
-|- eslint.config.js         # ESLint setup
-```
+## Contributing Guidelines
 
-## Key Routes
+> **Restricted Access:** Contribution to this repository is reserved for official members of the JIT-ACM Student Chapter unless otherwise approved by the maintainers.
 
-- `/` -> Home page
-- `/EventDetails?id=<event-id>` -> Event detail page
-- `/EventRegistration?id=<event-id>` -> Event registration form
-- `/EventTicket?id=<event-id>` -> Generated ticket view
-- `/BlogPage?id=<blog-id>` -> Blog detail page
+1. Check existing issues before starting a task.
+2. Create a branch for your work (`feature/your-feature-name`).
+3. Follow linting and project conventions.
+4. Open a pull request with a clear change summary and screenshots for UI updates.
 
-## Notes for Developers
+---
 
-- Route files are currently named with uppercase initials (for example `EventDetails.tsx`), so route paths are case-sensitive and should be linked exactly as defined.
-- The repository still includes Vite entry/config files (`vite.config.ts`, `src/main.tsx`) from earlier setup, but npm scripts are configured for Next.js.
-
-## Contributing
-
-1. Create a feature branch.
-2. Make changes with clear commit messages.
-3. Run lint and build checks locally.
-4. Open a pull request with a concise description and screenshots for UI changes.
-
-## License
-
-This project is currently marked with the `ISC` license in `package.json`.
+<div align="center">
+	<p>&copy; 2026 JIT-ACM Student Chapter. All rights reserved.</p>
+</div>
