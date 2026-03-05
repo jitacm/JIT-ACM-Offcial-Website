@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
@@ -14,11 +13,6 @@ import Footer from './components/Footer';
 import Blog from './components/Blog';
 import Testimonials from './components/Testimonials';
 import Sponsors from './components/Sponsors';
-import EventDetails from './pages/EventDetails';
-import EventRegistration from './pages/EventRegistration';
-import EventTicket from './pages/EventTicket';
-import BlogPage from './pages/BlogPage';
-import './styles/fonts.css';
 
 function App() {
   const controls = useAnimation();
@@ -32,7 +26,7 @@ function App() {
   }, [controls]);
 
   return (
-    <Router>
+    <>
       <Preloader />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -40,29 +34,19 @@ function App() {
         className="min-h-screen bg-apple-gray-50"
       >
         <Navbar />
-        <Routes>
-          <Route path="/" element={
-            <>
-              <Hero3D />
-              <ParallaxSection />
-              <About />
-              <Gallery />
-              <Events />
-              <TeamSlider />
-              <Testimonials />
-              <Blog />
-              <Sponsors />
-              <Contact />
-            </>
-          } />
-          <Route path="/event/:id" element={<EventDetails />} />
-          <Route path="/event/:id/register" element={<EventRegistration />} />
-          <Route path="/event/:id/ticket" element={<EventTicket />} />
-          <Route path="/blog/:id" element={<BlogPage />} />
-        </Routes>
+        <Hero3D />
+        <ParallaxSection />
+        <About />
+        <Gallery />
+        <Events />
+        <TeamSlider />
+        <Testimonials />
+        <Blog />
+        <Sponsors />
+        <Contact />
         <Footer />
       </motion.div>
-    </Router>
+    </>
   );
 }
 

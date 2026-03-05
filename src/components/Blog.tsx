@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Calendar, ArrowRight } from 'lucide-react';
 
@@ -57,7 +57,7 @@ const Blog = () => {
               transition={{ delay: index * 0.1 }}
               className="group relative"
             >
-              <Link to={`/blog/${blog.id}`} className="block">
+              <Link href={`/BlogPage?id=${blog.id}`} className="block">
                 <div className="relative h-64 overflow-hidden rounded-xl">
                   <img
                     src={blog.image}

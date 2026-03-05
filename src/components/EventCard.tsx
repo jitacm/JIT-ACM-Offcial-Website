@@ -1,6 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
 import { ArrowRight, Calendar, MapPin, Clock } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 interface EventCardProps {
   event: {
@@ -39,8 +39,8 @@ const EventCard = ({ event }: EventCardProps) => {
           </p>
         </div>
         <p className="mt-4 text-gray-600 line-clamp-2">{event.description}</p>
-        <Link 
-          to={`/event/${event.id}`}
+        <Link
+          href={`/EventDetails?id=${event.id}`}
           className="mt-6 inline-flex items-center justify-center w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
         >
           Register Now

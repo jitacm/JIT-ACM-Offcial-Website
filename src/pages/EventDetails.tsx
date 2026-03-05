@@ -1,10 +1,11 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Clock, Users, Award } from 'lucide-react';
+import { Calendar, MapPin, Clock, Award } from 'lucide-react';
 
 const EventDetails = () => {
-  const { id } = useParams();
+  const router = useRouter();
+  const id = typeof router.query.id === 'string' ? router.query.id : 'annual-hackathon-2024';
   
   // In a real app, fetch event details based on ID
   const event = {
@@ -101,7 +102,7 @@ const EventDetails = () => {
                     ))}
                   </ul>
                   <Link
-                    to={`/event/${id}/register`}
+                    href={`/EventRegistration?id=${id}`}
                     className="mt-8 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200"
                   >
                     Register Now

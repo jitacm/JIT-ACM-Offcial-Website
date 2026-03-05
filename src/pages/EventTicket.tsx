@@ -1,12 +1,12 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, Clock, Download, Share2, User } from 'lucide-react';
 import { QRCodeSVG } from 'qrcode.react';
 import html2canvas from 'html2canvas';
 
 const EventTicket = () => {
-  const { id } = useParams();
+  const router = useRouter();
+  const id = typeof router.query.id === 'string' ? router.query.id : 'annual-hackathon-2024';
 
   const handleDownload = async () => {
     const ticket = document.getElementById('ticket');
