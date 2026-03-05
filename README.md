@@ -1,18 +1,14 @@
 <div align="center">
 	<img src="./public/images/jitacm-logo-wht.png" alt="JIT-ACM Logo" width="120" height="auto" />
-
 	<h1>JIT ACM Official Website</h1>
-
 	<p>
 		<strong>The official website of the JIT ACM Student Chapter.</strong>
 	</p>
-
 	<p>
 		<a href="#getting-started"><strong>Get Started</strong></a> ·
 		<a href="#system-architecture"><strong>Architecture</strong></a> ·
 		<a href="https://github.com/Walayhs/JIT-ACM-Offcial-Website"><strong>Repository</strong></a>
 	</p>
-
 	<p>
 		<img src="https://img.shields.io/badge/Framework-Next.js_16-000000?logo=next.js&logoColor=white" alt="Next.js" />
 		<img src="https://img.shields.io/badge/UI-React_19-61DAFB?logo=react&logoColor=black" alt="React" />
